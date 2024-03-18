@@ -16,7 +16,7 @@ Many other applications exist for the 5480A in the fields of medicine, bio-medic
 
 In the case of the work at-hand: Discovery of the phenomenon active in a Model 'D' oscillator.
 
-The 5480A also does multi-channel scaling, and time and frequency histograms. With some external pulse-amplitude discriminators, it could be a pulse-height analyzer. It appears to be an attempt by HP to address several small markets for specialised instruments by producing one multi-function instrument. The basic specifications of the 5480 are 9/7/5-bit A-D resolution, up to 100 kHz A-D conversion rate, and 1024*24-bit memory. The display resolution is 1000 Horizonal * 1024 Vertical.
+The 5480A also does multi-channel scaling, and time and frequency histograms. With some external pulse-amplitude discriminators, it could be a pulse-height analyzer. It appears to be an attempt by HP to address several small markets for specialised instruments by producing one multi-function instrument. The basic specifications of the 5480A are 9/7/5-bit A-D resolution, up to 100 kHz A-D conversion rate, and 1024*24-bit memory. The display resolution is 1000 Horizonal * 1024 Vertical.
 
 The 5480A was announced in HP's Spring 1968 _New Instruments_ catalog, and is last listed in the 1973 catalog. The 1970 _Electronics for Measurement, Analysis, and Computation_, pp.42-3, lists the price for the corresponding 5480 configuration
 
@@ -27,7 +27,7 @@ The 5480A was announced in HP's Spring 1968 _New Instruments_ catalog, and is la
 |![5486](/images/5486A.jpg)| 5486A |  Control Unit       | $1500 |
 |![5488](/images/5488A.jpg)| 5488A |  Correlator Input   | $2500 |
 
- This would be a total cost of $12,450, which inflates to $99,576.26 as of February 2024. Its listed weight (with plug-in modules) is 34.5 kg. 
+ This would be a total cost of $12,450, which inflates to $99,576.26 as of February 2024. Its listed weight with plug-in modules is 34.5 kg. 
 
 ## What is in here?
 
