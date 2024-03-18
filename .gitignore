@@ -1,1 +1,7 @@
 **/.o
+src/ctl5480/ifDSA.o
+src/ctl5480/main.o
+src/util/attn.o
+src/util/cp.o
+src/util/gpioDummy.o
+src/util/util.o
