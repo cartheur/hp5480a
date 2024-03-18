@@ -23,13 +23,13 @@ Prequisite:
 
 ![block](/images/block-diagram.png)
 
-My redrawing of the HP schematics may or may not be useful to you. I did that while deriving some functional sense of the design in the absence of the Th-of-Op manual. If you're going between the HP schematics and my schematics you may find the renaming of symbol names annoying, but that, again, was to bring some functional clarity to things. I eventually arrived at breaking the internal system control down to a hierarchy of:
+My redrawing of the HP schematics may or may not be useful to you. I did that while deriving some functional sense of the design in the absence of the Operating or Service manuals; although a source on microfiche was discovered and scans are in the [manuals](/manuals/README.md) folder. If you're going between the HP schematics and my schematics you may find the renaming of symbol names annoying, but that, again, was to bring some functional clarity to things. I eventually arrived at breaking the internal system control down to a hierarchy of:
 
-1. function selection
-2. function execution control
-3. sweep control
-4. sample processing
-5. process micro-cycles
+1. Function selection
+2. Function execution control
+3. Sweep control
+4. Sample processing
+5. Process micro-cycles
 
 .. and named things to better reflect that.
 
