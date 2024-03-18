@@ -2,7 +2,9 @@
 
 Code and desicription for the Hewlett-Packard 5480A Display Section and Statistical Measurement Modules.
 
-This code was received from the author [here](http://madrona.ca/e/HP5480A/index.html).
+### About the 5480A
+
+![block](/images/block-diagram.png)
 
 ### The code in the _src_ folder
 
@@ -41,3 +43,7 @@ I simplified this a tad in my unit with the internal mod (in red) so one only ha
 
 Regarding the rear-panel connectors, I had a bunch of the correct male pins for those connectors but not the base & shroud. There were some on ebay but 50$+ (at that time).
 A possibility was using short stubs of common #14 solid copper wire. #14 is slightly larger diameter than the proper pins but will fit. The downside was sharp edges of cut #14 might scratch the gold plating in the female pins and whether the larger diameter is unduly bending the spring metal in the F pins.
+
+### Errata
+
+This code was received from the author [here](http://madrona.ca/e/HP5480A/index.html).
