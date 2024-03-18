@@ -2,9 +2,15 @@
 
 Code and desicription for the Hewlett-Packard 5480A Display Section and Statistical Measurement Modules.
 
-### About the 5480A
+### 5480A Block Diagram
 
 ![block](/images/block-diagram.png)
+
+### The controller schematic
+
+In order to perform remote-control of this unit, a system needs to be constructed of the following.
+
+![schematic](/images/controller-host.png)
 
 ### The code in the _src_ folder
 
@@ -28,21 +34,20 @@ Inside are the following:
 	HP5480Adapter.pdf	: Schematic of adapter to interface between the 5480 and controller-host (RPi or other suitable).
 
 My redrawing of the HP schematics may or may not be useful to you. I did that while deriving some functional sense of the design in the absence of the Th-of-Op manual. If you're going between the HP schematics and my schematics you may find the renaming of symbol names annoying, but that, again, was to bring some functional clarity to things. I eventually arrived at breaking the internal system control down to a hierarchy of:
-	1. function selection
-	2. function execution control
-	3. sweep control
-	4. sample processing
-	5. process micro-cycles
+
+1. function selection
+2. function execution control
+3. sweep control
+4. sample processing
+5. process micro-cycles
+
 .. and named things to better reflect that.
 
 clt5480 has a limited help: "?" will get you a list of commands/arguments. It is focussed on exercising the accumulator and core memory as that's what I needed to do. I did the clocked-serial style interface just to minimize the number of IO pins to the controller-host.
 
-In using ctl5480, or implementing some alternative remote-control, the major point to be aware of is that to do many/most things from remote control the timing system of the 5480 must be shut down. Otherwise, the memory continues to be scanned, and the address registers modified 'behind your back', as you try to do anything with memory via remote.
-The timing system is shut down from remote by asserting nSVQ_MAIN and nSVQ_SUB (HP5480Schematic.pdf.4) (nMBSL asserted holds the timing system in reset).
-I simplified this a tad in my unit with the internal mod (in red) so one only has to assert nSVQ_SUB, but the mod is not a requisite (actually, I just ran out of male pins for the rear-panel connectors).
+In using ctl5480, or implementing some alternative remote-control, the major point to be aware of is that to do many/most things from remote control the timing system of the 5480 must be shut down. Otherwise, the memory continues to be scanned, and the address registers modified 'behind your back', as you try to do anything with memory via remote. The timing system is shut down from remote by asserting nSVQ_MAIN and nSVQ_SUB (HP5480Schematic.pdf.4) (nMBSL asserted holds the timing system in reset). I simplified this a tad in my unit with the internal mod (in red) so one only has to assert nSVQ_SUB, but the mod is not a requisite (actually, I just ran out of male pins for the rear-panel connectors).
 
-Regarding the rear-panel connectors, I had a bunch of the correct male pins for those connectors but not the base & shroud. There were some on ebay but 50$+ (at that time).
-A possibility was using short stubs of common #14 solid copper wire. #14 is slightly larger diameter than the proper pins but will fit. The downside was sharp edges of cut #14 might scratch the gold plating in the female pins and whether the larger diameter is unduly bending the spring metal in the F pins.
+Regarding the rear-panel connectors, I had a bunch of the correct male pins for those connectors but not the base & shroud. There were some on ebay but 50$+ (at that time). A possibility was using short stubs of common #14 solid copper wire. #14 is slightly larger diameter than the proper pins but will fit. The downside was sharp edges of cut #14 might scratch the gold plating in the female pins and whether the larger diameter is unduly bending the spring metal in the F pins.
 
 ### Errata
 
