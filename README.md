@@ -2,9 +2,36 @@
 
 Code and desicription for the Hewlett-Packard 5480A Display Section and Statistical Measurement Modules.
 
+### Building the controller code for Raspberry Pi
+
+Prequisite:
+
+* Clone the [wiringPi](https://github.com/WiringPi/WiringPi) repository, follow the instructions to install on Linux
+
+* Step into the `/src/util` folder and run `make`
+* Step into the `/src/crl5480` folder and run `make`
+* The binary is build and ready to use.
+
+`clt5480` has a limited help: `?` will get you a list of commands/arguments. It is focussed on exercising the accumulator and core memory as that's what I needed to do. I did the clocked-serial style interface just to minimize the number of IO pins to the controller-host.
+
+### Things to be aware of when using the application
+
+* In using ctl5480, or implementing some alternative remote-control, the major point to be aware of is that to do many/most things from remote control the timing system of the 5480 must be shut down; otherwise, the memory continues to be scanned, and the address registers modified 'behind your back', as you try to do anything with memory via remote.
+* The timing system is shut down from remote by asserting `nSVQ_MAIN` and `nSVQ_SUB` (HP5480Schematic.pdf.4) (`nMBSL` asserted holds the timing system in reset). I simplified this a tad in my unit with the internal mod (in red) so one only has to assert `nSVQ_SUB`, but the mod is not a requisite (actually, I just ran out of male pins for the rear-panel connectors).
+
 ### 5480A Block Diagram
 
 ![block](/images/block-diagram.png)
+
+My redrawing of the HP schematics may or may not be useful to you. I did that while deriving some functional sense of the design in the absence of the Th-of-Op manual. If you're going between the HP schematics and my schematics you may find the renaming of symbol names annoying, but that, again, was to bring some functional clarity to things. I eventually arrived at breaking the internal system control down to a hierarchy of:
+
+1. function selection
+2. function execution control
+3. sweep control
+4. sample processing
+5. process micro-cycles
+
+.. and named things to better reflect that.
 
 ### The controller schematic
 
@@ -12,9 +39,9 @@ In order to perform remote-control of this unit, a system needs to be constructe
 
 ![schematic](/images/controller-host.png)
 
-### The code in the _src_ folder
+Regarding the rear-panel connectors, I had a bunch of the correct male pins for those connectors but not the base & shroud. There were some on ebay but 50$+ (at that time). A possibility was using short stubs of common #14 solid copper wire. #14 is slightly larger diameter than the proper pins but will fit. The downside was sharp edges of cut #14 might scratch the gold plating in the female pins and whether the larger diameter is unduly bending the spring metal in the F pins.
 
-Run the makefile in the `util` folder first, then run the makefile in the `ctl5480` folder.
+### Organization of this repository
 
 Inside are the following:
 
@@ -34,23 +61,6 @@ Inside are the following:
 	HP5480Timing.pdf	: Timing diagrams for the main timing system and some details for the Prepare state.
 
 	HP5480Adapter.pdf	: Schematic of adapter to interface between the 5480 and controller-host (RPi or other suitable).
-
-My redrawing of the HP schematics may or may not be useful to you. I did that while deriving some functional sense of the design in the absence of the Th-of-Op manual. If you're going between the HP schematics and my schematics you may find the renaming of symbol names annoying, but that, again, was to bring some functional clarity to things. I eventually arrived at breaking the internal system control down to a hierarchy of:
-
-1. function selection
-2. function execution control
-3. sweep control
-4. sample processing
-5. process micro-cycles
-
-.. and named things to better reflect that.
-
-`clt5480` has a limited help: `?` will get you a list of commands/arguments. It is focussed on exercising the accumulator and core memory as that's what I needed to do. I did the clocked-serial style interface just to minimize the number of IO pins to the controller-host.
-
-* In using ctl5480, or implementing some alternative remote-control, the major point to be aware of is that to do many/most things from remote control the timing system of the 5480 must be shut down; otherwise, the memory continues to be scanned, and the address registers modified 'behind your back', as you try to do anything with memory via remote.
-* The timing system is shut down from remote by asserting `nSVQ_MAIN` and `nSVQ_SUB` (HP5480Schematic.pdf.4) (`nMBSL` asserted holds the timing system in reset). I simplified this a tad in my unit with the internal mod (in red) so one only has to assert `nSVQ_SUB`, but the mod is not a requisite (actually, I just ran out of male pins for the rear-panel connectors).
-
-Regarding the rear-panel connectors, I had a bunch of the correct male pins for those connectors but not the base & shroud. There were some on ebay but 50$+ (at that time). A possibility was using short stubs of common #14 solid copper wire. #14 is slightly larger diameter than the proper pins but will fit. The downside was sharp edges of cut #14 might scratch the gold plating in the female pins and whether the larger diameter is unduly bending the spring metal in the F pins.
 
 ### Errata
 
