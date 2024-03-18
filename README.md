@@ -1,4 +1,4 @@
-## hp5480a
+## hp5480a Signal Analyzer
 
 Code and desicription for the Hewlett-Packard 5480A Display Section and Statistical Measurement Modules.
 
