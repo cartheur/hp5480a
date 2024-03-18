@@ -5,3 +5,4 @@ src/util/attn.o
 src/util/cp.o
 src/util/gpioDummy.o
 src/util/util.o
+src/ctl5480/ctl5480
