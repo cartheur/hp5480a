@@ -1,21 +1,31 @@
 ## hp5480a Signal Analyzer
 
-The Hewlett-Packard 5480A Digital Signal Analyser was introduced in April 1968. It was advertised as:
+The Hewlett-Packard 5480A Digital Signal Analyser was introduced in April 1968. Also known as a signal averager or enhancer, the 5480A Signal Analyzer recovers repetitive signals buried in noise by averaging out that noise. The Model 5480A Signal Analyzer applies statistical principles for real time analysis of data and signal-to-noise improvement. Accurate, detailed information is made available through signal averaging; an example of the results of this technique applied to nerve response is shown in Figure 1.
 
-    Also known as a signal averager or enhancer, the 5480A Signal Analyzer recovers repetitive signals buried in noise by averaging out that noise. It's ideally suited for applications in medicine, biology, spectroscopy, physics and vibrations analysis, as well as electronics.
+![fig.1]()
 
-The 5480 also does Multi-Channel-Scaling, and time and frequency histograms. With some external Pulse-amplitude-discriminators it could be a Pulse-Height Analyser. It appears to be an attempt by HP to address several small markets for specialised instruments by producing one multi-function instrument. The basic specifications of the 5480 are 9/7/5-bit A-D resolution, up to 100KHz A-D conversion rate, and 1024*24-bit memory. The display resolution is 1000 Horizonal * 1024 Vertical.
+The render of this data on an hp 141S/8553L/8552A Spectrum analyzer is shown in Figure 2.
+
+![fig.2]()
+
+The render of this data on the hp 5480A is shown in Figure 3.
+
+![fig.3]()
+
+Many other applications exist for the 5480A in the fields of medicine, bio-medicine, chemistry, physics, electronics, astronomy, vibration, and turbulance. The plug-in design of the 5480A provides a more versatile instrument and guards against obsolescence. The 5480A Mainframe contains a 1024 word, 24-bit magnetic core memory with related circuits and a CRT display while the two plug-ins chosen (5486A, and either the 5485Am 5487A, or 5488A) depend upon the specific application.
+
+The 5480A also does Multi-Channel-Scaling, and time and frequency histograms. With some external pulse-amplitude discriminators, it could be a pulse-height analyser. It appears to be an attempt by HP to address several small markets for specialised instruments by producing one multi-function instrument. The basic specifications of the 5480 are 9/7/5-bit A-D resolution, up to 100KHz A-D conversion rate, and 1024*24-bit memory. The display resolution is 1000 Horizonal * 1024 Vertical.
 
 The 5480 was announced in HP's Spring 1968 _New Instruments_ catalog, and is last listed in the 1973 catalog. The 1970 _Electronics for Measurement, Analysis, and Computation_, pp.42-3, lists the price for the corresponding 5480 configuration
 
 | Photo | Part number | Description | Price |
 |-------|-------------|:-------------:|------:|
-|       | 5480A |  Memory Display     | $6950 |
-|       | 5485A |  Two-Channel Input  | $1500 |
-|       | 5486A |  Control Unit       | $1500 |
-|       | 5488A |  Correlator Input   | $2500 |
+|![5480]()| 5480A |  Memory Display     | $6950 |
+|![5485]()| 5485A |  Two-Channel Input  | $1500 |
+|![5486]()| 5486A |  Control Unit       | $1500 |
+|![5488]()| 5488A |  Correlator Input   | $2500 |
 
- This would be a total cost of $12,450, which inflates to $99,576.26 in February 2024. Its listed weight (with plug-in modules) is 34.5 kg. 
+ This would be a total cost of $12,450, which inflates to $99,576.26 as of February 2024. Its listed weight (with plug-in modules) is 34.5 kg. 
 
 ## What is in here?
 
