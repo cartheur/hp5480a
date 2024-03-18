@@ -4,9 +4,18 @@ The Hewlett-Packard 5480A Digital Signal Analyser was introduced in April 1968. 
 
     Also known as a signal averager or enhancer, the 5480A Signal Analyzer recovers repetitive signals buried in noise by averaging out that noise. It's ideally suited for applications in medicine, biology, spectroscopy, physics and vibrations analysis, as well as electronics.
 
-The 5480 also does Multi-Channel-Scaling, and time and frequency histograms. With some external Pulse-amplitude-discriminators it could be a Pulse-Height Analyser. It appears to be an attempt by HP to address several small markets for specialised instruments by producing one multi-function instrument. The basic specifications of the 5480 are 9/7/5-bit A-D resolution, up to 100KHz A-D conversion rate, and 1024*24-bit memory. The display resolution is 1000 H * 1024 V.
+The 5480 also does Multi-Channel-Scaling, and time and frequency histograms. With some external Pulse-amplitude-discriminators it could be a Pulse-Height Analyser. It appears to be an attempt by HP to address several small markets for specialised instruments by producing one multi-function instrument. The basic specifications of the 5480 are 9/7/5-bit A-D resolution, up to 100KHz A-D conversion rate, and 1024*24-bit memory. The display resolution is 1000 Horizonal * 1024 Vertical.
 
-The 5480 was announced in HP's Spring 1968 "New Instruments" catalog, and is last listed in the 1973 catalog. A catalog entry from ~ 1970 indicates the price for the 5480 configuration shown here would be $6950+$1500+$1800+$300 = $10,550, which inflates to $84,379.88 in February 2024. Its listed weight (with plug-in modules) is 34.5 kg. 
+The 5480 was announced in HP's Spring 1968 _New Instruments_ catalog, and is last listed in the 1973 catalog. The 1970 _Electronics for Measurement, Analysis, and Computation_, pp.42-3, lists the price for the corresponding 5480 configuration
+
+| Photo | Part number | Description | Price |
+|-------|-------------|:-------------:|------:|
+|       | 5480A |  Memory Display     | $6950 |
+|       | 5485A |  Two-Channel Input  | $1500 |
+|       | 5486A |  Control Unit       | $1500 |
+|       | 5488A |  Correlator Input   | $2500 |
+
+ This would be a total cost of $12,450, which inflates to $99,576.26 in February 2024. Its listed weight (with plug-in modules) is 34.5 kg. 
 
 ## What is in here?
 
