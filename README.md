@@ -14,6 +14,8 @@ In order to perform remote-control of this unit, a system needs to be constructe
 
 ### The code in the _src_ folder
 
+Run the makefile in the `util` folder first, then run the makefile in the `ctl5480` folder.
+
 Inside are the following:
 
 	ctl5480/	: Remote-control program for the 5480.
