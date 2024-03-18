@@ -2,6 +2,8 @@
 
 Code and desicription for the Hewlett-Packard 5480A Display Section and Statistical Measurement Modules.
 
+This code was received from the author [here](http://madrona.ca/e/HP5480A/index.html).
+
 ### The code in the _src_ folder
 
 Inside are the following:
