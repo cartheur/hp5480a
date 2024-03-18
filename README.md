@@ -1,5 +1,15 @@
 ## hp5480a Signal Analyzer
 
+The Hewlett-Packard 5480A Digital Signal Analyser was introduced in April 1968. It was advertised as:
+
+    Also known as a signal averager or enhancer, the 5480A Signal Analyzer recovers repetitive signals buried in noise by averaging out that noise. It's ideally suited for applications in medicine, biology, spectroscopy, physics and vibrations analysis, as well as electronics.
+
+The 5480 also does Multi-Channel-Scaling, and time and frequency histograms. With some external Pulse-amplitude-discriminators it could be a Pulse-Height Analyser. It appears to be an attempt by HP to address several small markets for specialised instruments by producing one multi-function instrument. The basic specifications of the 5480 are 9/7/5-bit A-D resolution, up to 100KHz A-D conversion rate, and 1024*24-bit memory. The display resolution is 1000 H * 1024 V.
+
+The 5480 was announced in HP's Spring 1968 "New Instruments" catalog, and is last listed in the 1973 catalog. A catalog entry from ~ 1970 indicates the price for the 5480 configuration shown here would be $6950+$1500+$1800+$300 = $10,550, which inflates to $84,379.88 in February 2024. Its listed weight (with plug-in modules) is 34.5 kg. 
+
+## What is in here?
+
 Code and desicription for the Hewlett-Packard 5480A Display Section and Statistical Measurement Modules.
 
 ### Building the controller code for Raspberry Pi
