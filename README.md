@@ -16,7 +16,7 @@ Prequisite:
 
 ### Things to be aware of when using the application
 
-* In using ctl5480, or implementing some alternative remote-control, the major point to be aware of is that to do many/most things from remote control the timing system of the 5480 must be shut down; otherwise, the memory continues to be scanned, and the address registers modified 'behind your back', as you try to do anything with memory via remote.
+* In using `ctl5480`, or implementing some alternative remote-control, the major point to be aware of is that to do many/most things from remote control the timing system of the 5480 must be shut down; otherwise, _the memory continues to be scanned, and the address registers modified 'behind your back', as you try to do anything with memory via remote_.
 * The timing system is shut down from remote by asserting `nSVQ_MAIN` and `nSVQ_SUB` (HP5480Schematic.pdf.4) (`nMBSL` asserted holds the timing system in reset). I simplified this a tad in my unit with the internal mod (in red) so one only has to assert `nSVQ_SUB`, but the mod is not a requisite (actually, I just ran out of male pins for the rear-panel connectors).
 
 ### 5480A Block Diagram
