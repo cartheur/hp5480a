@@ -1,4 +1,4 @@
-## hp5480a Signal Analyzer
+## The Hewlett-Packard 5480a Signal Analyzer
 
 The Hewlett-Packard 5480A Digital Signal Analyser was introduced in April 1968. Also known as a signal averager or enhancer, the 5480A Signal Analyzer recovers repetitive signals buried in noise by averaging out that noise. The Model 5480A Signal Analyzer applies statistical principles for real time analysis of data and signal-to-noise improvement. Accurate, detailed information is made available through signal averaging; an example of the results of this technique applied to nerve response is shown in Figure 1.
 
