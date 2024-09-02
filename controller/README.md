@@ -8,8 +8,8 @@ Here is the controller circuit for remoting the 5480A.
 
 ### The parts
 
-* 2x 74LS164
-* 2x 74LS273
+* 2x 74LS164 - An 8-bit parallel-out serial shift register `SIPO`.
+* 2x 74LS273 - An octal D-type flip-flop with clear input and single-rail outputs. It has a positive-edge trigger and can operate at up to 30 MHz clock frequency.
 * 2k 1/4W
 * 6.2k 1/4W
 * 0.1uF 
