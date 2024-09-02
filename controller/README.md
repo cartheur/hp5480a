@@ -17,5 +17,5 @@ Here is the controller circuit for remoting the 5480A.
 * Ribbon cable
 * 20x male pins and shrouds for the 5480A inputs (size?) 
 
-RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, apparently safely. Clamp used for output fron the adapter to the RPi.
+RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, apparently safely. Clamp used for output from the adapter to the RPi.
 
