@@ -34,4 +34,8 @@ Where the board looks like this, when assembled:
 
 ![image](/images/controller.jpg)
 
-To be continued...
+-----
+
+## What is the outcome
+
+Asembling this system using Adafruit jumper wires and sets of jumper pins from Mouser...
