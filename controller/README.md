@@ -17,7 +17,9 @@ Here is the controller circuit for remoting the 5480A.
 * Ribbon cable
 * 20x male pins and shrouds for the 5480A inputs (size?) 
 
-RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, apparently safely. 
+RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, apparently safely. As:
+
+![image](/controller/images/LM336-pins.png)
 
 
 * `HIGH-LOW` is detected on falling or rising edge, just putting 1v doesn't produce and edge so to speak and may be inconsistent.
