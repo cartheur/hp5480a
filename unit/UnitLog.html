@@ -1,0 +1,391 @@
+
+<html>
+<head>
+<title>HP-5480A DSA Unit Log</title>
+<link href="../style.css" rel="styleSheet" type="text/css">
+</head>
+<body>
+
+<table class=banner><tr>
+<td class=bannerL><A class=banner href="../../index.html">bh</A></td>
+<td class=bannerC>Hewlet-Packard 5480A<br>Digital Signal Analyser<br>Unit Log</td>
+<td class=bannerR>&nbsp;</td>
+</tr></table>
+
+<!-- Content ------------------------------>
+
+<!-- Unit Information ------------------------->
+
+<P>
+<a href="large/view.jpg" target=large><img class=pic src="view.jpg" width=400 height=300 align=right></a>
+
+<P>
+<table class=log>
+<tr><td class=logLabel>Manufacturer:</td><td>Hewlett-Packard</td></tr>
+<tr><td class=logLabel>Model:</td><td>HP-5480A</td></tr>
+<tr><td class=logLabel>Serial Number:</td>	<td>5480A: 852-00171
+						<br>5486A: 852-00166
+						<br>5487A: 920-00104
+						</td></tr>
+<tr><td class=logLabel><nobr>Year of Manufacture:</nobr></td><td>IC date codes 1968::1971, mostly late-68::early-69</td></tr>
+<tr><td class=logLabel>Date of Receipt:</td><td>~ 2003</td></tr>
+<tr><td class=logLabel>Source:</td><td>(surplus) </td></tr>
+<tr><td class=logLabel>State upon Receipt:</td><td>
+Good condition.
+No manuals.
+CRT trace, signal can be displayed from inputs, but there seems to be a problem in processing.
+See Log entry of 2022 Apr 25.
+<br>
+Boards are mostly of early series.
+<br>
+Labeled with sticker from B.C. Children's Hospital.
+</td></tr>
+</table>
+
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2015 Sep</td></tr>
+<tr><td class=logLabel>Procedure:</td><td>
+Schematics manual obtained: 5480-90013, "Printed Jan 1971".
+Source: ebay.
+Schematics only, Theory of Op and system structure are in a separate manual.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr</td></tr>
+<tr><td class=logLabel>Procedure:</td><td>
+
+Board and Assembly complement:
+
+<P>
+<table><tr>
+
+<td valign=top>
+<table border=0 cellspacing=1 cellpadding=2 bgcolor=999999>
+<tr bgcolor=bbdddd> <th align=left>Where</th> <th align=left>Assembly</th> <th align=left>Series</th> <th align=left>Description</th> </tr>
+
+<tr bgcolor=bbdddd><td>A1</td>				<td></td> <td></td> <td>Display</td>
+<tr bgcolor=cceeee><td align=right>A1</td>		<td>5480-60013</td> <td>852</td> <td>Deflection Amplifiers</td>
+<tr bgcolor=cceeee><td align=right>A2</td>		<td>5480-60025</td> <td>832</td> <td>Calibrator</td>
+<tr bgcolor=cceeee><td align=right>A3</td>		<td>1200-66505</td> <td>REV A</td> <td>High Voltage Rectifier</td>
+<tr bgcolor=cceeee><td align=right>A4</td>		<td>1200-66515</td> <td>REV A</td> <td>High Voltage Regulator</td>
+
+<tr bgcolor=bbdddd><td>A2</td>				<td></td> <td></td> <td>Memory, Clock, DACs</td>
+<tr bgcolor=cceeee><td align=right>A1</td>		<td>5421-6001</td> <td>744</td> <td>Sense Amplifier</td>
+<tr bgcolor=cceeee><td align=right>A2</td>		<td>5421-6002</td> <td>744</td> <td>Inhibit Generator</td>
+<tr bgcolor=cceeee><td align=right>A3</td>		<td>5421-6001</td> <td>744</td> <td>Sense Amplifier</td>
+<tr bgcolor=cceeee><td align=right>A4</td>		<td>5421-6002</td> <td>744</td> <td>Inhibit Generator</td>
+<tr bgcolor=cceeee><td align=right>A5</td>		<td>5421-6003</td> <td>744</td> <td>Decoder Gate</td>
+<tr bgcolor=cceeee><td align=right>A6</td>		<td>5421-6003</td> <td>744</td> <td>Decoder Gate</td>
+<tr bgcolor=cceeee><td align=right>A7</td>		<td>5421-6004</td> <td>744</td> <td>R/W Generator</td>
+<tr bgcolor=cceeee><td align=right>A8</td>		<td>5421-6004</td> <td>744</td> <td>R/W Generator</td>
+<tr bgcolor=cceeee><td align=right>A9</td>		<td>5480-60010</td> <td>832</td> <td>Horizontal DAC</td>
+<tr bgcolor=cceeee><td align=right>A10</td>		<td>5480-60009</td> <td>852</td> <td>Vertical DAC</td>
+<tr bgcolor=cceeee><td align=right>A11</td>		<td>5480-60020</td> <td>852</td> <td>Voltage Regulator: +/-19.5</td>
+<tr bgcolor=cceeee><td align=right>A12</td>		<td>5480-60073</td> <td>928</td> <td>20MHz Clock</td>
+<tr bgcolor=cceeee><td align=right>A13</td>		<td>5480-60011</td> <td>852</td> <td>Memory Timer</td>
+<tr bgcolor=cceeee><td align=right>A14</td>		<td>5480-60022</td> <td>832</td> <td>Memory Logic</td>
+
+<tr bgcolor=bbdddd><td>A3</td>				<td></td> <td></td> <td>Accumulator & Address Register</td>
+<tr bgcolor=cceeee><td align=right>A1</td>		<td>5480-60001</td> <td>832</td> <td>Preset Detector</td>
+<tr bgcolor=cceeee><td align=right>A2</td>		<td>5480-60004</td> <td>852</td> <td>Accumulator Control</td>
+<tr bgcolor=cceeee><td align=right>A3</td>		<td>5480-60002</td> <td>852</td> <td>High Speed Accumulator (Bits 0-3)</td>
+<tr bgcolor=cceeee><td align=right>A4</td>		<td>5480-60003</td> <td>832</td> <td>Accumulator (Bits 4-7)</td>
+<tr bgcolor=cceeee><td align=right>A5</td>		<td>5480-60003</td> <td>832</td> <td>Accumulator (Bits 8-11)</td>
+<tr bgcolor=cceeee><td align=right>A6</td>		<td>5480-60003</td> <td>832</td> <td>Accumulator (Bits 12-15)</td>
+<tr bgcolor=cceeee><td align=right>A7</td>		<td>5480-60003</td> <td>832</td> <td>Accumulator (Bits 16-19)</td>
+<tr bgcolor=cceeee><td align=right>A8</td>		<td>5480-60005</td> <td>832</td> <td>Accumulator (Bits 20-23)</td>
+<tr bgcolor=cceeee><td align=right>A9</td>		<td>5480-60007</td> <td>852</td> <td>Address Register (Bits 0-1)</td>
+<tr bgcolor=cceeee><td align=right>A10</td>		<td>5480-60006</td> <td>832</td> <td>Address Register (Bits 2-5)</td>
+<tr bgcolor=cceeee><td align=right>A11</td>		<td>5480-60006</td> <td>832</td> <td>Address Register (Bits 6-9)</td>
+<tr bgcolor=cceeee><td align=right>A12</td>		<td>5480-60008</td> <td>832</td> <td>Address Register Control</td>
+
+</table>
+</td>
+
+<td valign=top>
+<table border=0 cellspacing=1 cellpadding=2 bgcolor=999999>
+<tr bgcolor=bbdddd> <th align=left>Where</th> <th align=left>Assembly</th> <th align=left>Series</th> <th align=left>Description</th> </tr>
+
+<tr bgcolor=bbdddd><td>A4</td>				<td></td> <td></td> <td>Main Frame Lights & Switches</td>
+<tr bgcolor=cceeee><td align=right>A1</td>		<td>5480-60012</td> <td>832</td> <td>Light Driver & +/-18V Indicator</td>
+
+<tr bgcolor=bbdddd><td>A5</td>				<td></td> <td></td> <td>Power Supplies</td>
+<tr bgcolor=cceeee><td align=right>A1</td>		<td>5480-60014</td> <td>852</td> <td>Low Voltage Regulator: +5, -7.5, +/-12</td>
+<tr bgcolor=cceeee><td align=right>A2</td>		<td>5480-60015</td> <td>832</td> <td>High Voltage Regulator: +/-50, +200</td>
+
+<tr bgcolor=bbdddd><td>5486A</td>			<td></td> <td></td> <td>Process Control</td>
+<tr bgcolor=cceeee><td align=right>A1</td>		<td>5486-60011</td> <td>852</td> <td>Input Buffer & Trigger</td>
+<tr bgcolor=cceeee><td align=right>A2</td>		<td>5486-60010</td> <td>832</td> <td>Time Base B</td>
+<tr bgcolor=cceeee><td align=right>A3</td>		<td>5486-60009</td> <td>852</td> <td>Time Base A</td>
+<tr bgcolor=cceeee><td align=right>A4</td>		<td>5486-60008</td> <td>832</td> <td>Time Slot Decoder</td>
+<tr bgcolor=cceeee><td align=right>A5</td>		<td>5486-60003</td> <td>852</td> <td>Light Driver Control</td>
+<tr bgcolor=cceeee><td align=right>A6</td>		<td>5486-60014</td> <td>832</td> <td>Logic C</td>
+<tr bgcolor=cceeee><td align=right>A7</td>		<td>5486-60006</td> <td>852</td> <td>Logic A</td>
+<tr bgcolor=cceeee><td align=right>A8</td>		<td>5486-60005</td> <td>832</td> <td>Program Selector A</td>
+<tr bgcolor=cceeee><td align=right>A9</td>		<td>5486-60004</td> <td>852</td> <td>Program Selector B</td>
+<tr bgcolor=cceeee><td align=right>A10</td>		<td>5486-60007</td> <td>852</td> <td>Logic B</td>
+<tr bgcolor=cceeee><td align=right>A11</td>		<td>5486-60002</td> <td>832</td> <td>Shift Control B</td>
+<tr bgcolor=cceeee><td align=right>A12</td>		<td>5486-60001</td> <td>832</td> <td>Shift Control A</td>
+<tr bgcolor=cceeee><td align=right>A13</td>		<td>5486-60015</td> <td>852</td> <td>Logic D</td>
+
+<tr bgcolor=bbdddd><td>5487A</td>			<td></td> <td></td> <td>Four Channel Input (w Option 01)</td>
+<tr bgcolor=cceeee><td align=right>A1</td>		<td>5487-60001</td> <td>908</td> <td>Four Channel Input Amplifier</td>
+<tr bgcolor=cceeee><td align=right>A2</td>		<td>5485-60004</td> <td>852</td> <td>Sample & Hold</td>
+<tr bgcolor=cceeee><td align=right>A3</td>		<td>5485-60003</td> <td>920</td> <td>ADC</td>
+<tr bgcolor=cceeee><td align=right>A4</td>		<td>5487-60004</td> <td>908</td> <td>Four Channel Switching Logic A</td>
+<tr bgcolor=cceeee><td align=right>A5</td>		<td>5487-60005</td> <td>908</td> <td>Four Channel Output Amplifier</td>
+<tr bgcolor=cceeee><td align=right>A6</td>		<td>5485-60020</td> <td>908</td> <td>Switching Logic B (Option 01)</td>
+<tr bgcolor=cceeee><td align=right>A7</td>		<td>5485-60009</td> <td>920</td> <td>Interface</td>
+
+</table>
+</td>
+
+</tr></table>
+
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr</td></tr>
+<tr><td class=logLabel>Symptoms:</td><td>
+Trace is bright, intensity control has no effect, eventually reduces to bright dot on left of CRT.
+</td></tr>
+<tr><td class=logLabel>Analysis:</td><td>
++50V supply is at +39V.
++/-50V board set up in test jig with two 24VAC transformers. Oscillation on input & output lines during portion of 60Hz cycle.
+Sense transistor 2N3053 is being operated over Vce spec.
+Removed and tried with higher V transistor but still some oscillation.
+</td></tr>
+<tr><td class=logLabel>Solution:</td><td>
+Original replaced, board reinstalled to measure actual load current.
+Now works, output is clean.
+May have been just bad edge connector contact.
+Current into CRT PS board measured at 78mA @ 47V.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr</td></tr>
+<tr><td class=logLabel>Procedure:</td><td>
+A1 (Display) compartment, boards and CRT area damp-wiped.
+<br>
+A2 compartment damp-wiped.
+<br>
+A3 (Accumulator/Address) compartment and boards damp-wiped.
+Boards towards rear have some mold/grime on lower portions. Some corrosion on traces and TI IC pins.
+Isoprop and damp-wiped.
+<br>
+A4 compartment and board damp-wiped.
+<br>
+A5 (PS) boards damp-wiped.
+<br>
+5486 case, frame and boards damp-wiped.
+<br>
+5487 case, frame and boards damp-wiped.
+<br>
+5480 case, frame damp-wiped, upper & lower covers washed.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr 06</td></tr>
+<tr><td class=logLabel>Procedure:</td><td>
+Observation: Circuit of A3A2U3.6 noticed to have lower resistance (-probe GND) than other outputs of same IC, all having equivalent circuits (1 output, 3 inputs).
+Measured in test setup, HIGH level of U3.6 is 3.7V while others are 3.9V.
+Logic operation is fine.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr 07</td></tr>
+<tr><td class=logLabel>Procedure:</td><td>
+In operation, signal can be captured and displayed.
+Setup: SYNC LINE, MODE AVERAGE, SWEEP 10mS, SWEEP COUNT 1, CHANNEL 1 ON, 60 Hz to channel 1, DATA mode.
+Press CLEAR, START, DISPLAY.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr 07</td></tr>
+<tr><td class=logLabel>Symptoms:</td><td>
+Switching between INPUT vs DATA on 5487, INPUT was showing 'analog' version of signal, then digitized.
+When switched to DISPLAY mode, noisy unsynced 60Hz appears, looking like an open circuit.
+</td></tr>
+<tr><td class=logLabel>Analysis:</td><td>
+Looks like part of signal path is not switching to INPUT but remaining in DATA.
+Presumably normal behaviour.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr 07</td></tr>
+<tr><td class=logLabel>Symptoms:</td><td>
+Vernier level adjust on channel 3 is loose.</td></tr>
+<tr><td class=logLabel>Solution:</td><td>
+Plastic coupling broken. Glued.
+<br>
+Mounting bar for pots on channels 1 & 2 had been bent, apparently to correct for to-short spacers between switch body and pot mounting bar.
+Manufacturing flaw.
+Mounting bars straightened, washers added on all 4 channels to add space.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr 08</td></tr>
+<tr><td class=logLabel>Procedure:</td><td>
+PRESET/NORMAL knob tab had been broken off (was style like the TOTALISER knob).
+Replaced with cylinder-style knob (note replacement has different set-screw drive-key and thread size than other knobs on unit).
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr</td></tr>
+<tr><td class=logLabel>Procedure:</td><td>
+Examination of operating manual and schematics indicates rear-panel system-interconnect connectors J15::J18 provide sufficient functionality to test and exercise many aspects of the 5480.
+<br>
+Controller program and adapter hardware created.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Apr 25</td></tr>
+
+<tr><td class=logLabel>Symptoms:</td><td>
+Conversion is not linear e.g. the slope of a triangle wave is not straight, instead having bursts of semi-random variation (pattern does appear to be same at same points in cycle).
+Error bursts appear around vertical low-order bits, ~32.
+<br>
+Also, process termination by preset sweep count only works for 1 & 2 sweeps count.
+</td></tr>
+
+<tr><td class=logLabel>Analysis:</td><td>
+During exercise tests with new controller, two faults noted:
+shift-left of 1 in accumulator fails from 4th bit to 5th bit when 3rd bit is 1, and counting up results in random extra increments e.g. counting up 0x10000 from 0 results in 0x10018.
+<br>
+Board A3A3 (high-speed accumulator) removed for bench testing.
+FF AC3 will set and reset, but during shift-left the clock signal appears riding at low amplitude on the Q & nQ logic levels.
+U4 (FF AC3) failed with internal short of pins 8 & 9.
+</td></tr>
+
+<tr><td class=logLabel>Solution:</td><td>
+U4 74H72 replaced with 7472.
+Speed questionable but seems to work.
+<br>
+Unit now appears to be working properly.
+The sweep-count preset failure would be explained in that this function uses memory locations above 1000, and thus relies on the accumulator for operation.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Jun 11</td></tr>
+<tr><td class=logLabel>Procedure:</td><td>
+Wire to 86A13.H opened and 86A13.7 grounded to allow for simpler remote control.
+With these alterations only SVQ_SUB needs to be asserted to enable remote control and the AR0/1 address bits will not be altered during remote control.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Jul 07</td></tr>
+
+<tr><td class=logLabel>Symptoms:</td><td>
+Similar problem to that of Apr 25: coarse conversion around low-bits and sweep count preset only works for 1 & 2 count.
+</td></tr>
+
+<tr><td class=logLabel>Analysis:</td><td>
+Functioning of PREP state figured out and then examined.
+Shifting and preset-limit-bit detection seems to be working correctly.
+Controller shows sweep count in memory 1020:1023 is not incrementing properly: sweep count oscillates 1-2-3-2-3-2-3-2-3-etc.
+Bit 2^0 counts properly but bit 2^1 sticks 1 without generating a carry.
+U2.8 noted to have poor LOW level, ~ 1V.
+<br>
+Board A3A3 removed again for bench testing, with monostable mock-up to generate 100nS clock pulse.
+Signal on pins U2.8 and U2.9 observed to be the same (FF AC0).
+Pins are internally shorted, same fault as with U4 although symptoms are not exactly the same.
+</td></tr>
+
+<tr><td class=logLabel>Solution:</td><td>
+U2 74H72 replaced with 7472.
+<br>
+Unit again appears to be working properly.
+</td></tr>
+</table>
+
+<!-- Event ------------------------------------>
+
+<P><hr align=left width=20%>
+<table class=log>
+<tr><td class=logLabel>Date:</td><td>2022 Jul 10</td></tr>
+
+<tr><td class=logLabel>Procedure:</td><td>
+Observation: With controller, sweep count after calibrated average processes (fixed sweep count) appears to be half what would be expected.
+<pre>
+7:   0x3FC:  0x000041 0x000041 0x000040 0x000040
+4:   0x3FC:  0x000009 0x000008 0x000008 0x000008
+3:   0x3FC:  0x000005 0x000004 0x000004 0x000004
+2:   0x3FC:  0x000003 0x000002 0x000002 0x000002
+1:   0x3FC:  0x000001 0x000001 0x000001 0x000001
+0:   0x3FC:  0x800000 0x800000 0x800000 0x800000
+</pre>
+
+</table>
+
+
+<!-- Footer ------------------------------->
+
+<P><br>
+<center><hr width=96%>
+<table class=footer><tr>
+<td class=footerS>&nbsp;</td>
+<td class=footerC>
+
+  <A href="log.html" class=selected>Unit Log</A>
+<br>
+  <A href="index.html" class=selected>HP-5480A DSA</A>
+
+</td>
+<td class=footerS><A href="../../index.html">bhilpert</A><br>2022 Apr</td>
+</tr></table>
+<hr></center>
+
+</body>
+</html>

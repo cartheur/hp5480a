@@ -95,4 +95,5 @@ Inside are the following:
 
 ### Errata
 
-This code was received from the author [here](http://madrona.ca/e/HP5480A/index.html).
+* This code was received from the author [here](http://madrona.ca/e/HP5480A/index.html).
+* Read the [unit](/unit/UnitLog.html) log.
