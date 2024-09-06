@@ -30,3 +30,8 @@ RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, ap
 
 Clamp used for output from the adapter to the RPi.
 
+Where the board looks like this, when assembled:
+
+![image](/images/controller.jpg)
+
+To be continued...
