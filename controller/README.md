@@ -30,6 +30,14 @@ RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, ap
 
 Clamp used for output from the adapter to the RPi.
 
+The 74LS164 is:
+
+![image](/images/74164.jpg)
+
+The 74LS263 is:
+
+![image](/images/74273.jpg)
+
 Where the board looks like this, when assembled:
 
 ![image](/images/controller.jpg)
