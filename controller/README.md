@@ -22,7 +22,9 @@ Here is the controller circuit for remoting the 5480A.
 * Pins 
     - Mouser p/n:  571-1060-16-0122-LP
     - ![image](/controller/images/16z-pin.png)
-
+* LM336Z-2.5
+    - ![image](/controller/images/lm336z-kon.png)
+    - ![image](/controller/images/LM336-pins.png)
 
 
 RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, apparently safely. As:
