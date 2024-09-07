@@ -17,6 +17,10 @@ Here is the controller circuit for remoting the 5480A.
 * Ribbon cable
 * 20x male pins and shrouds for the 5480A inputs (size?) 
 
+Rather than the ribbon cable, which seems really difficult to find in this older, hand-friendly form-factor, used jumper wires from Adafruit.
+
+![image](/controller/images/jumper-wires.png)
+
 RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, apparently safely. As:
 
 ![image](/controller/images/LM336-pins.png)
