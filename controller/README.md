@@ -14,10 +14,7 @@ Here is the controller circuit for remoting the 5480A.
 * 6.2k 1/4W
 * 0.1uF 
 * LM336Z-2.5
-* Ribbon cable
-* 20x male pins and shrouds for the 5480A inputs (size?) 
-
-Rather than the ribbon cable, which seems really difficult to find in this older, hand-friendly form-factor, used 
+* Rather than the ribbon cable, which seems really difficult to find in this older, hand-friendly form-factor. Pins were also a difficult proposition but since the indication of AWG16 was provided, smooth and solder-capable pins there were the exact size (barring a dollop of machine oil), these are: 
 
 * Jumper wires from Adafruit
     - Mouser p/n: 485-4447 and 485-4482
