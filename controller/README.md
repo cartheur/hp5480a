@@ -25,6 +25,10 @@ Here is the controller circuit for remoting the 5480A.
 * LM336Z-2.5
     - ![image](/controller/images/lm336z-kon.png)
     - ![image](/controller/images/LM336-pins.png)
+* Connected into this configuration
+    - ![image](/controller/images/lm366-power-setup.png)
+* Leveraged in the circuit between the 5480A and the Pi
+    - ![image](/controller/images/lm366-circuit-place.png)
 
 
 RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, apparently safely. As:
