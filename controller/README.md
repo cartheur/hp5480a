@@ -2,6 +2,16 @@
 
 Here is the controller circuit for remoting the 5480A.
 
+### The backplane of the 5480A
+
+For these purposes, only interested in the J-connections to external synchronization and computing aspects
+
+![image](/controller/images/backplane.png)
+
+Where the left set of J-connectors:
+
+![image](/controller/images/cons-18-19.png)
+
 ### The schematic
 
 ![image](/images/controller-host.png)
