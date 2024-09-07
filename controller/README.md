@@ -21,11 +21,12 @@ Rather than the ribbon cable, which seems really difficult to find in this older
 
 * Jumper wires from Adafruit
     - Mouser p/n: 485-4447 and 485-4482
+    - ![image](/controller/images/jumper-wires.png)
 * Pins 
     - Mouser p/n:  571-1060-16-0122-LP
     - ![image](/controller/images/16z-pin.png)
 
-![image](/controller/images/jumper-wires.png)
+
 
 RPi I/O pins are 3.3V. Output pins from an RPi can directly drive TTL inputs, apparently safely. As:
 
