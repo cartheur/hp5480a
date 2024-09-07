@@ -50,3 +50,11 @@ Where the board looks like this, when assembled:
 ## What is the outcome
 
 Asembling this system using Adafruit jumper wires and sets of jumper pins from Mouser...
+
+-----
+
+## Taking the experiment a set further
+
+There is this bit of interesting-ness to the application
+
+* [here](/data-input/README.md)
