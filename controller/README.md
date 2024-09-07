@@ -17,7 +17,13 @@ Here is the controller circuit for remoting the 5480A.
 * Ribbon cable
 * 20x male pins and shrouds for the 5480A inputs (size?) 
 
-Rather than the ribbon cable, which seems really difficult to find in this older, hand-friendly form-factor, used jumper wires from Adafruit.
+Rather than the ribbon cable, which seems really difficult to find in this older, hand-friendly form-factor, used 
+
+* Jumper wires from Adafruit
+    - Mouser p/n: 485-4447 and 485-4482
+* Pins 
+    - Mouser p/n:  571-1060-16-0122-LP
+    - ![image](/controller/images/16z-pin.png)
 
 ![image](/controller/images/jumper-wires.png)
 
