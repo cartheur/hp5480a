@@ -45,6 +45,11 @@ Where the board looks like this, when assembled:
 
 ![image](/images/controller.jpg)
 
+Where it is important to understand what these four connectors are purposed
+
+* ![image](/controller/images/logic-conn-01.png)
+* ![image](/controller/images/logic-pin-table.png)
+
 -----
 
 ## What is the outcome
