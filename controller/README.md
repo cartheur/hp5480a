@@ -8,7 +8,7 @@ For these purposes, only interested in the J-connections to external synchroniza
 
 ![image](/controller/images/backplane.png)
 
-Where the left set of J-connectors:
+Where the left set of J-connectors indicate an instrument called a _Correlation Synthesizer_, what is that? Maybe [this](https://rdrr.io/cran/synthesizer/man/dcor.html) (from R).
 
 ![image](/controller/images/cons-18-19.png)
 
