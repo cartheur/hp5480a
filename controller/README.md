@@ -25,6 +25,7 @@ Here is the controller circuit for remoting the 5480A.
 * LM336Z-2.5 - Clamp used for output from the adapter to the RPi
     - ![image](/controller/images/lm336z-kon.png)
     - ![image](/controller/images/LM336-pins.png)
+    - ![image](/controller/images/lm336-hookup.png)
 * Connected into this configuration
     - ![image](/controller/images/lm366-power-setup.png)
 * Leveraged in the circuit between the 5480A and the Pi
