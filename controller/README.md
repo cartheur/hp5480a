@@ -64,13 +64,13 @@ Where it is important to understand what these four connectors are purposed
 
 -----
 
-## What is the outcome
+### What is the outcome
 
 Asembling this system using Adafruit jumper wires and sets of jumper pins from Mouser...
 
 -----
 
-## Taking the experiment a set further
+### Taking the experiment a set further
 
 There is this bit of interesting-ness to the application
 
