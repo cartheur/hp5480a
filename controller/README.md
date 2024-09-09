@@ -62,6 +62,10 @@ Where it is important to understand what these four connectors are purposed
 * ![image](/controller/images/logic-pin-table-02.png)
 * ![image](/controller/images/logic-pin-table-03.png)
 
+### Program interface
+
+![image](/controller/images/headers.png)
+
 -----
 
 ### What is the outcome
