@@ -75,3 +75,7 @@ Asembling this system using Adafruit jumper wires and sets of jumper pins from M
 There is this bit of interesting-ness to the application
 
 * [here](/data-input/README.md)
+
+In order to begin, need Mouser 636-111-024-113L001, [this](https://eu.mouser.com/ProductDetail/636-111-024-113L001) part:
+
+![image](/data-input/images/amphenol-24.png)
