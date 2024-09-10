@@ -1,10 +1,12 @@
 ## The Hewlett-Packard 5480a Signal Analyzer
 
+The Hewlett-Packard 5480A Digital Signal Analyser was introduced in April 1968. Also known as a signal averager or enhancer, the 5480A Signal Analyzer recovers repetitive signals buried in noise by averaging out that noise. The Model 5480A Signal Analyzer applies statistical principles for real time analysis of data and signal-to-noise improvement.
+
 * OPTION 01 (VARIANCE OPTION)
 	- DESCRIPTION
 	This Option, available for both the 5485A and the 5487A Input Plug-Ins, enables use of the 5480A VARIANCE OUTPUT signal to check validity of the averaged signal. The Option may be ordered installed and tested at the factory, or it may be installed in the field. Field installation consists of replacing the Switching Logic B Assembly (05485-60010) with Switching Logic B Assembly (05485-60020); no wiring changesare required.
 
-The Hewlett-Packard 5480A Digital Signal Analyser was introduced in April 1968. Also known as a signal averager or enhancer, the 5480A Signal Analyzer recovers repetitive signals buried in noise by averaging out that noise. The Model 5480A Signal Analyzer applies statistical principles for real time analysis of data and signal-to-noise improvement. Accurate, detailed information is made available through signal averaging; an example of the results of this technique applied to nerve response is shown in Figure 1.
+Accurate, detailed information is made available through signal averaging; an example of the results of this technique applied to nerve response is shown in Figure 1.
 
 ![fig.1]()
 
