@@ -72,6 +72,8 @@ In order to perform remote-control of this unit, a system needs to be constructe
 
 Regarding the rear-panel connectors, I had a bunch of the correct male pins for those connectors but not the base & shroud. There were some on ebay but 50$+ (at that time). A possibility was using short stubs of common #14 solid copper wire. #14 is slightly larger diameter than the proper pins but will fit. The downside was sharp edges of cut #14 might scratch the gold plating in the female pins and whether the larger diameter is unduly bending the spring metal in the F pins.
 
+The specific details of how this circuit is connected and the meaning of the nomenclature is noted [here](/controller/schematic/README.md).
+
 ### Organization of this repository
 
 Inside are the following:
