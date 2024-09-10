@@ -89,4 +89,31 @@ No, the **black arrows** in the schematic do not indicate +5V. Instead, they rep
 - **Black arrows**: Signal or data flow direction
 - **+5V**: Power supply, which must be connected to the Vcc pins of the components (e.g., pin 20 on the 74LS273) but is not represented by the black arrows.
 
-If you have further questions about specific parts of the schematic, feel free to ask!
+-----
+
+### Logic behaviour of U1
+
+If you set **pin 2 (S1b)** of **U1** (74LS164 shift register) to **+5V**, the following will happen:
+
+### Behavior of the 74LS164:
+1. **S1b as a Serial Input**:
+   - **Pin 2 (S1b)** is a **serial data input** to the 74LS164. It is **logically ORed** with **S1a** (pin 1), meaning data can be input through either pin to be shifted into the register.
+   - When **S1b is held at +5V** (logic 1), it will continuously supply a high logic level (1) as input data to the shift register.
+
+2. **Data Shifted into the Register**:
+   - With each clock pulse (on **pin 8**), a **logic 1** will be shifted into the register because **S1b** is set high.
+   - The outputs **Q0-Q7** will sequentially be loaded with **1s** as clock pulses are received. After 8 clock pulses, all the outputs (Q0-Q7) will be high (set to logic 1).
+   
+3. **Steady State**:
+   - As long as **S1b** remains connected to +5V, every bit shifted into the shift register will be a **1** on each clock pulse.
+   - Eventually, the register will be filled with all 1s, and further clock pulses will simply continue shifting a stream of 1s through the outputs.
+
+### Summary:
+- Setting **pin 2 (S1b)** to **+5V** means the input data for the shift register will always be **logic 1**.
+- With each clock pulse, a **1** will be shifted into the register, and after 8 clock pulses, all the outputs (Q0 to Q7) will be set to **1**.
+- The register will remain in this state as long as the input is held at +5V.
+
+### Practical Implications:
+- If you want the shift register to hold or output a sequence of alternating data (such as 0s and 1s), setting S1b to a constant **+5V** would not allow that. Instead, it will continuously shift in 1s.
+- To introduce varying data into the shift register, you would need to apply a **varying signal** (e.g., from a controller or another source) to **S1b** or **S1a**.
+
